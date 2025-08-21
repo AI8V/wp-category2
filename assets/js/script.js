@@ -1,4 +1,3 @@
-// Complete Course Platform: Dynamic Content + Working Filters
 (function () {
   "use strict";
 
@@ -713,12 +712,4 @@
       tags: [title.toLowerCase().replace(/\s+/g, '-')]
     });
   };
-
-  console.log('Complete Course Platform loaded! 🎉');
-  console.log('Available functions:');
-  console.log('- CourseManager.updateCourse(id, {title: "New Title"})');
-  console.log('- CourseManager.addNewCourse({...})');
-  console.log('- quickAddCourse("Course Name", "Category", 25.99)');
-
 })();
-
