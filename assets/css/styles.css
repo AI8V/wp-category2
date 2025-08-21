@@ -762,3 +762,25 @@ body {
   }
 }
 
+/* For smaller mobile devices */
+
+@media (max-width: 576px) {
+  .container-fluid {
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0.75rem !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .card-body {
+    padding: 1rem !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .course-card {
+    min-width: 100%;
+  }
+}
+

@@ -211,7 +211,7 @@
     const priceClass = course.price === 0 ? 'text-success' : 'text-primary';
     
     return `
-      <div class="col-12 col-lg-4 mb-4">
+      <div class="col-12 col-sm-12 col-md-6 col-lg-4 mb-4">
         <div class="card h-100 shadow-sm course-card" 
              data-rating="${course.rating}" 
              data-students="${course.students}" 
@@ -220,8 +220,8 @@
              data-level="${course.level}">
           <div class="course-card-img-container">
             <picture>
-              <source srcset="assets/img/course-small.webp 350w, assets/img/course-large.webp 700w" sizes="(max-width: 767px) 90vw, (max-width: 991px) 45vw, 30vw" type="image/webp">
-              <source srcset="assets/img/course-small.jpg 350w, assets/img/course-large.jpg 700w" sizes="(max-width: 767px) 90vw, (max-width: 991px) 45vw, 30vw" type="image/jpeg">
+              <source srcset="assets/img/course-small.webp 350w, assets/img/course-large.webp 700w" sizes="(max-width: 767px) 95vw, (max-width: 991px) 48vw, 32vw" type="image/webp">
+              <source srcset="assets/img/course-small.jpg 350w, assets/img/course-large.jpg 700w" sizes="(max-width: 767px) 95vw, (max-width: 991px) 48vw, 32vw" type="image/jpeg">
               <img class="img-fluid card-img-top" src="${course.image}" alt="${course.title}" width="400" height="210">
             </picture>
             <span class="badge bg-${COURSE_DATA.categories[course.category]?.color || 'success'} course-category">${course.category}</span>
@@ -721,3 +721,4 @@
   console.log('- quickAddCourse("Course Name", "Category", 25.99)');
 
 })();
+
