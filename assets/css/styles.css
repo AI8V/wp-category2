@@ -352,6 +352,9 @@ body {
 }
 
 .course-card-img-container img {
+  width: 100%;
+  height: auto;
+  display: block;
   transition: var(--transition-smooth);
   filter: brightness(0.9) saturate(1.1);
 }
@@ -674,55 +677,35 @@ body {
 }
 
 /* ================================== */
-
 /* Mobile Responsiveness */
-
 /* ================================== */
 
 /* For Tablets and smaller devices */
-
 @media (max-width: 991px) {
   .col-lg-3 {
     display: none !important;
   }
-}
-
-@media (max-width: 991px) {
   .container-fluid {
     margin: 1rem;
     max-width: calc(100% - 2rem);
   }
-}
-
-@media (max-width: 991px) {
   .col-lg-9 {
     padding: 1.5rem;
   }
-}
-
-@media (max-width: 991px) {
   .course-card {
     margin-bottom: 2rem;
   }
 }
 
 /* For Mobile phones */
-
-/* Course Cards adjustments */
-
 @media (max-width: 768px) {
+  /* Course Cards adjustments */
   .course-card:hover {
     transform: translateY(-6px);
   }
-}
-
-@media (max-width: 768px) {
   .card-body {
     padding: 1.25rem;
   }
-}
-
-@media (max-width: 768px) {
   .card-title {
     font-size: 1.2rem;
     word-break: normal;
@@ -730,31 +713,19 @@ body {
     -ms-hyphens: auto;
     hyphens: auto;
   }
-}
-
-@media (max-width: 768px) {
   .card-body .d-flex.justify-content-between p {
     font-size: 0.9rem;
   }
-}
-
-@media (max-width: 768px) {
   .card-meta span {
     font-size: 0.85rem;
   }
-}
 
-/* Course Card Overlay adjustments */
-
-@media (max-width: 768px) {
+  /* Course Card Overlay adjustments */
   .course-card-overlay {
     padding: 1.5rem;
   }
-}
 
-/* Fix for header elements layout */
-
-@media (max-width: 768px) {
+  /* Fix for header elements layout */
   .col-lg-9 .d-flex.justify-content-between.pb-3 {
     flex-direction: column;
     align-items: flex-start;
@@ -763,24 +734,18 @@ body {
 }
 
 /* For smaller mobile devices */
-
 @media (max-width: 576px) {
   .container-fluid {
     max-width: 100% !important;
     margin: 0 !important;
     padding: 0.75rem !important;
   }
-}
 
-@media (max-width: 576px) {
   .card-body {
     padding: 1rem !important;
   }
-}
 
-@media (max-width: 576px) {
   .course-card {
     min-width: 100%;
   }
 }
-
